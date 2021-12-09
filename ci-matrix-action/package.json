@@ -1,0 +1,13 @@
+{
+    "name": "aws-cdk-package-versions",
+    "type": "module",
+    "license": "MIT",
+    "main": "index.js",
+    "dependencies": {
+        "@actions/core": "^1.6.0",
+        "api-npm": "^1.0.0",
+        "compare-versions": "^4.1.1",
+        "docker-hub-api": "^0.8.0",
+        "semver": "^7.3.5"
+    }
+}

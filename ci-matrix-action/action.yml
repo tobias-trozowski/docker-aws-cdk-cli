@@ -1,0 +1,10 @@
+# action.yml
+name: 'Retrieve latest stable versions'
+description: 'Retrives the latest stable versions of npm package "aws-cdk"'
+outputs:
+  config: # id of output
+    description: >-
+      JSON object for use as a job matrix.
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
