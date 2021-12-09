@@ -3,7 +3,7 @@ import compareVersions from 'compare-versions';
 import api from 'api-npm';
 import semver from 'semver';
 
-api.getdetails('webpack', getVersions);
+api.getdetails('aws-cdk', getVersions);
 
 async function getVersions(data) {
     /** You will have your own code to what to do with return json **/
@@ -26,11 +26,15 @@ async function getVersions(data) {
                 .reduce((previousValue, currentValue) => compareVersions.compare(currentValue, previousValue, '>') ? currentValue : previousValue, '0.0.0')
         )
     }
+
     const matrix = {
         include: latestVersionList
             .map(version => ({
-                name: "Build and push AWS CDK CLI " + version,
-                tags: [version, version === latest ? 'latest' : ''].filter(tag => tag.length > 0)
+                version: version,
+                tags: [version, version === latest ? 'latest' : '']
+                    .filter(tag => tag.length > 0)
+                    .map(tag => 'tobiastrozowski/aws-cdk-cli:' + tag)
+                    .join(',')
             }))
     };
 
