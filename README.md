@@ -1,6 +1,6 @@
 # AWS CDK Docker Container.
 
-[![Docker pull](https://img.shields.io/docker/pulls/tobiastrozowski/aws-cdk-cli.svg)](https://hub.docker.com/r/tobiastrozowski/aws-cdk-cli/) [![Docker pull](https://img.shields.io/docker/stars/tobiastrozowski/aws-cdk-cli.svg)](https://hub.docker.com/r/tobiastrozowski/aws-cdk-cli/) [![Github issues](https://img.shields.io/github/issues-raw/tobias-trozowski/docker-aws-cdk-cli.svg)](https://github.com/tobias-trozowski/docker-aws-cdk-cli/issues) [![License](https://img.shields.io/github/license/tobias-trozowski/docker-aws-cdk-cli.svg)](https://github.com/tobias-trozowski/docker-aws-cdk-cli/blob/master/LICENSE.md)
+[![Docker pull](https://img.shields.io/docker/pulls/tobiastrozowski/aws-cdk-cli.svg)](https://hub.docker.com/r/tobiastrozowski/aws-cdk-cli/) [![Docker pull](https://img.shields.io/docker/stars/tobiastrozowski/aws-cdk-cli.svg)](https://hub.docker.com/r/tobiastrozowski/aws-cdk-cli/) [![Github issues](https://img.shields.io/github/issues-raw/tobias-trozowski/docker-aws-cdk-cli.svg)](https://github.com/tobias-trozowski/docker-aws-cdk-cli/issues) [![License](https://img.shields.io/github/license/tobias-trozowski/docker-aws-cdk-cli)](https://github.com/tobias-trozowski/docker-aws-cdk-cli/blob/master/LICENSE.md)
 
 [Docker](https://www.docker.com) container to and run [AWS CDK CLI](https://docs.aws.amazon.com/cdk/latest/guide/cli.html).
 
