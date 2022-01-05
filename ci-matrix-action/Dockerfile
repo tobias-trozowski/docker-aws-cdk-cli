@@ -5,7 +5,7 @@ ENV TZ=UTC
 COPY index.js package.json package-lock.json /app/
 
 RUN ln -snf /usr/share/zoneinfo/${TZ} /etc/localtime && echo ${TZ} > /etc/timezone \
-    && apk --update --no-cache \
+    && apk --update --no-cache add \
         ca-certificates \
         tzdata \
         unzip \
