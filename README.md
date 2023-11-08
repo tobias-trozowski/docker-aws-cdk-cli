@@ -20,7 +20,7 @@ docker run --rm --entrypoint ash -v ~/.aws:/root/.aws -it tobiastrozowski/aws-cd
 Create yourself a shell alias:
 ```sh
 sudo bash -c "printf \"#\!/bin/sh
-docker run --rm -v ~/.aws:/root/.aws -v \$(pwd):/app -it tobiastrozowski/aws-cdk-cli \\\$@
+docker run --rm -v ~/.aws:/root/.aws -v \\\$(pwd):/app -it tobiastrozowski/aws-cdk-cli \\\$@
 \" > /usr/local/bin/cdk"
 sudo chmod +x /usr/local/bin/cdk
 ```
