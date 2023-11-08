@@ -13,6 +13,7 @@ RUN set -eux; \
         git \
         curl \
     ; \
+    apk --update --no-cache add dotnet7-sdk; \
     \
     npm install -g aws-cdk@${AWS_CDK_VERSION}; \
     \
@@ -26,6 +27,8 @@ RUN set -eux; \
 VOLUME /root/.aws
 
 VOLUME /app
+
+WORKDIR /app
 
 ENTRYPOINT ["cdk"]
 
